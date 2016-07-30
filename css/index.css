@@ -1,0 +1,387 @@
+html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 320px;
+        height: 150px;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide img{
+        width: 100%;
+        height: 100%;
+
+    }
+/*分类开始*/
+.fenlei{
+    width: 320px;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #e9e9e9;
+}
+.fenlei .fl-item{
+    width:60px;
+    height: auto;
+    margin:18px 0 18px 3px;
+    float: left;
+    text-align: center;
+    line-height: 12px;
+    font-size: 12px;
+}
+.fenlei .fl-item img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+/*智能头条开始*/
+.toutiao{
+    width: 100%;
+    height: auto;
+    padding: 14px 20px;
+    overflow: hidden;
+    box-sizing:border-box; 
+    border-bottom: 12px solid #e9e9e9;
+
+}
+.toutiao img{
+    width: 76px;
+    height: 19px;
+    float:left;
+}
+.toutiao .shu{
+    float:left;
+    font-size: 20px;
+    color: #E1E1E1;
+    line-height: 20px;
+    padding: 0 5px;
+}
+.toutiao .tt{
+    float:left;
+    font-size: 12px;
+    line-height: 20px;
+}
+.toutiao .tt .new{
+    color: #FF6695;
+    padding-right:6px; 
+}
+/*掌上抢开始*/
+.zhangsq{
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 12px;
+    color: #000;
+     border-bottom: 1px solid #e9e9e9;
+}
+.zhangsq .zsq{
+    padding:0 16px 0 27px;
+    color: #FF6695;
+}
+.zhangsq span:not(:nth-child(1)){
+    width:20px;
+    height:16px;
+    padding: 2px;
+    margin: 0 1px;
+    text-align: center;
+    line-height: 16px;
+    border: 1px solid #000;
+ } 
+ .zhangsq div{
+    display: inline-block;
+    float: right;
+    padding-right:25px;
+ }
+ .zhang{
+    width: 100%;
+    height: auto;  
+    overflow: hidden;  
+    border-bottom: 1px solid #e9e9e9;
+ }
+  .zhang .zsq-item{
+    float: left;
+    width: 33.3%;
+    height: auto;
+    padding:0 10px;
+    margin: 10px 0;
+    box-sizing:border-box;
+    border-right:1px solid #e9e9e9;
+    font-size: 10px;
+    text-align: center;
+    line-height: 14px;
+ }
+ .zhang .zsq-item img{
+    width: 114px;
+    height: 114px;
+    margin: 10px auto;
+   }
+ .zhang .zsq-item p{
+    margin-bottom: 5px;
+ }
+ .zhang .zsq-item p:nth-child(3){
+   color: #FF6695;
+ }
+ .zhang .zsq-item p .last{
+    text-decoration: line-through;
+    margin-left: 5px;
+    color: #000;
+ }
+ /*限时秒杀开始*/
+ .xsms{
+    width: 100%;
+    height: 78px;
+ }
+ .xsms img{
+     width: 100%;
+     height: 78px;
+ }
+ /*精选单品开始*/
+ .jxdp{
+     width: 320px;
+     height: auto;
+     overflow: hidden;
+ }
+ .jxdp h2{
+    display: block;
+    width: 100%;
+    height: 42px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 42px;
+    font-weight: 400;
+    background: #F4F4F4;
+ }
+ .jxdp ul{
+   width:100%;
+   height: auto;
+   overflow: hidden;
+ }
+.jxdp ul li{
+    width: 50%;
+    height: auto;
+    float: left;
+    border:1px solid #eee;
+    border-right: 0px;
+    box-sizing:border-box;
+}
+.jxdp ul li .jx-tips{
+    width:80px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 30px auto 10px;
+}
+.jxdp ul li .jx-tips img{
+    width:18px;
+    height: 18px;
+    float: left;
+    margin-right: 10px;
+}
+.jxdp ul li .jx-tu{
+    width: 180px;
+    height: 180px;
+}
+.jxdp ul li .jx-tu img{
+    width:100%;
+    height: 100%;
+}
+.jxdp ul li p{
+    padding:0 10px;
+    text-align: center;
+    line-height: 2em;
+}
+.jxdp ul li .jx-price{
+    color: #FF6695;
+}
+.jxdp ul li .jx-price .last{
+   color: #333;
+   text-decoration: line-through;
+   margin: 0 5px;
+}
+.jxdp ul li .jx-price .fav{
+    background: #FF6695;
+    color: #fff;
+    padding: 2px;
+}
+/*新品上市开始*/
+.xpss{
+    width: 100%;
+    height: auto;
+}
+.xpss h2{
+    display: block;
+    width: 100%;
+    height: 42px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 42px;
+    font-weight: 400;
+    background: #F4F4F4;
+ }
+.xpss ul{
+    width: 100%;
+    height: 254px;
+    border-bottom: 10px solid #F4F4F4;
+}
+.xpss ul .tu{
+ width: 100%;
+ height: 181px;
+ position: relative;
+}
+.xpss ul .tu img{
+    width: 100%;
+    height: 181px;
+}
+.xpss ul .tu .price{
+    position: absolute;
+    bottom:17px;
+    right:0;
+    width: 64px;
+    height: 32px;
+    background: rgba(0,0,0,.6);
+    text-align: center;
+    line-height: 32px;
+    color:#fff;
+    font-size: 14px;
+}
+.xpss ul .xp-title{
+  margin-top: 16px;
+  font-size: 14px;
+  color: #222;
+  padding: 0 18px;
+}
+.xpss ul .xp-msg{
+  line-height: 18px;
+  font-size: 12px;
+  color: #999;
+  margin-top: 6px;
+  padding: 0 18px 16px;
+  overflow: hidden;
+}
+/*手机开始*/
+.sj{
+   width: 100%;
+    height: auto;
+}
+.sj h2{
+    display: block;
+    width: 100%;
+    height: 42px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 42px;
+    font-weight: 400;
+    background: #F4F4F4;
+ }
+ .sj .sj-img{
+    width: 100%;
+    height: 156px;
+ }
+ .sj .sj-img img{
+     width: 100%;
+     height: 156px;
+ }
+ .sj ul{
+   width:100%;
+   height: auto;
+   overflow: hidden;
+ }
+.sj ul li{
+    width: 50%;
+    height: auto;
+    float: left;
+    border:1px solid #eee;
+    border-right: 0px;
+    padding: 18px 0 8px;
+    box-sizing:border-box;
+}
+.sj ul li .sj-tu{
+    width: 180px;
+    height: 180px;
+}
+.sj ul li .sj-tu img{
+    width:100%;
+    height: 100%;
+}
+.sj ul li p{
+    padding:0 10px;
+    line-height: 2em;
+}
+.sj ul li .sj-price{
+    color: #FF6695;
+}
+.sj ul li .sj-msg{
+    color: #999;
+}
+/*点击查看更多*/
+.more h2{
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 42px;
+    font-weight: 400;
+    background: #F4F4F4;
+    border: 1px solid #ccc;
+    border-bottom: 0px;
+}
+/*服务开始*/
+.fuwu{
+    width:100%;
+    height: 62px;
+    padding: 16px 0;
+    border: 1px solid #ccc;
+}
+.fuwu .fuwu-item{
+    float: left;
+    width: 106px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.fuwu .fuwu-item:nth-child(3){
+    border-right: 0px;
+}
+.fuwu .fuwu-item .quan{
+    width: 39px;
+    height: 39px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: 0 auto 5px;
+    text-align: center;
+    line-height: 39px;
+}
+/*版权开始*/
+.bq{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.bq p{
+    text-align: center;
+    line-height:25px;
+}
